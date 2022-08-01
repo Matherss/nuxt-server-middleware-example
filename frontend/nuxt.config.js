@@ -27,10 +27,11 @@ export default {
   buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ["@nuxtjs/strapi"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
   serverMiddleware: [
     { path: "/", handler: "~/server-middleware/rest.js" },
     "~/server-middleware/logger",
